@@ -7,7 +7,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to AWS CodeArtifact...
-      - CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain nextwork --domain-owner 2503-6853-8184 --region eu-west-2 --query authorizationToken --output text`
+      - CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain nextwork --domain-owner 250368538184 --region eu-west-2 --query authorizationToken --output text`
       - export CODEARTIFACT_AUTH_TOKEN
   build:
     commands:
